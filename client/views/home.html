@@ -1,0 +1,20 @@
+
+<div class="row">
+
+    <div class="col-lg-12">
+        <h1 class="page-header">Gallery</h1>
+        <p>Total Pictures: {{ pictures.pictures.length }}</p>
+    </div>
+
+
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="picture in pictures.pictures | orderBy: '-date'">
+        <a class="thumbnail" ui-sref="picture-details({ id: picture._id})">
+            <img class="img-gallery" ng-src="../img/uploads/{{ picture.path }}" alt="{{ picture.title }}">
+            <h3>{{ picture.title }}</h3>
+        </a>
+    </div>
+
+
+
+
+</div>

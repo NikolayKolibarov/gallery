@@ -1,0 +1,51 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 60px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    font-family: 'Yatra One', cursive;
+    font-size: 18px;
+    background-color: #449D44;
+
+}
+
+.thumb {
+    margin-bottom: 30px;
+
+}
+
+.img-gallery {
+    width: 400px;
+    height: 300px !important;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: green;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #449D44 !important;
+}
+
+.picture-count {
+    color: #449D44;
+
+}
+
+.required {
+    color: red;
+}

@@ -1,0 +1,36 @@
+
+<div class="row">
+
+    <div class="col-lg-12">
+        <h1 class="page-header">Upload</h1>
+
+    </div>
+
+    <div class="col-lg-offset-4  col-lg-4">
+        Enter title, choose picture, upload.
+        <p></p>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form enctype="multipart/form-data" ng-submit="pictureCreate.addPicture(picture)" method="post">
+                    <div class="form-group">
+                        <label for="title">Title: <span class="required">*</span></label>
+                        <input type="text" id="title" class="form-control" name="title" ng-model="picture.title">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image">Picture: <span class="required">*</span></label>
+                        <input type="file" id="image" name="image" ngf-select ng-model="picture.image">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Upload</button>
+                    </div>
+                </form>
+                <div class="errors" ng-show="pictureCreate.errors.length > 0">
+                    <p class="required" ng-repeat="error in pictureCreate.errors">{{ error.message }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
